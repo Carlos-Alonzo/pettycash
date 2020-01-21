@@ -2,6 +2,7 @@ package model;
 
 import lombok.Data;
 import lombok.NonNull;
+import repositories.ExpenseRepository;
 
 import javax.persistence.Entity;
 import java.util.ArrayList;
@@ -16,29 +17,50 @@ public class PettyCash
     private long currentBalance;
     @NonNull private String custodianName;
 
-    public void addReceipt(@NonNull PettyCashVoucher pettyCashVoucherToAdd)
+    public PettyCash(String custodian)
     {
-        if(currentBalance >= pettyCashVoucherToAdd.getAmount())
+        currentBalance = STARTING_CASH;
+        voucherReceiptList = new ArrayList<>();
+        custodianName = custodian;
+    }
+
+    public boolean addReceipt(@NonNull PettyCashVoucher pettyCashVoucherToAdd)
+    {
+        boolean result = false;
+        long voucherAmount = pettyCashVoucherToAdd.getAmount();
+
+        if(currentBalance >= voucherAmount && voucherAmount <= this.MAX_DOLLAR_AMOUNT )
         {
             currentBalance -= pettyCashVoucherToAdd.getAmount();
             voucherReceiptList.add(pettyCashVoucherToAdd);
+            result = true;
         }
+
+        return result;
     }
 
-    public void removeReceipt(@NonNull PettyCashVoucher pettyCashVoucherToRemove)
+    public boolean removeReceipt(@NonNull PettyCashVoucher pettyCashVoucherToRemove)
     {
+        boolean result = false;
+
         if(voucherReceiptList.contains(pettyCashVoucherToRemove))
         {
             currentBalance+= pettyCashVoucherToRemove.getAmount();
             voucherReceiptList.remove(pettyCashVoucherToRemove);
+            result = true;
         }
+        return result;
     }
 
-    public void replenish()
+    public ArrayList<PettyCashVoucher> replenish()
     {
         //Persist all expenses to Expense table
+        ArrayList<PettyCashVoucher> returnList = new ArrayList<>(voucherReceiptList);
         //reset the pettyCash
+        currentBalance = STARTING_CASH;
         //Clear the voucherReceiptList
+        voucherReceiptList.clear();
+        return returnList;
 
     }
 
