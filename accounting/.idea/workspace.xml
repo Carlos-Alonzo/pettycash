@@ -15,6 +15,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -43,6 +46,20 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager">
+    <configuration name="pettyCashApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="app.pettyCashApp" />
+      <module name="accounting" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.pettyCashApp" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -86,14 +103,50 @@
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="149" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1304.768@0.0.1304.768" timestamp="1579582002264" />
-    <state x="182" y="38" key="Maven.ArtifactSearchDialog" timestamp="1579579435926">
+    <state width="1261" height="192" key="GridCell.Tab.0.bottom" timestamp="1580144643742">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
-    <state x="182" y="38" key="Maven.ArtifactSearchDialog/0.0.1304.768@0.0.1304.768" timestamp="1579579435926" />
+    <state width="1261" height="192" key="GridCell.Tab.0.bottom/0.0.1304.768@0.0.1304.768" timestamp="1580144643742" />
+    <state width="1261" height="192" key="GridCell.Tab.0.center" timestamp="1580144643742">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.center/0.0.1304.768@0.0.1304.768" timestamp="1580144643742" />
+    <state width="1261" height="192" key="GridCell.Tab.0.left" timestamp="1580144643742">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.left/0.0.1304.768@0.0.1304.768" timestamp="1580144643742" />
+    <state width="1261" height="192" key="GridCell.Tab.0.right" timestamp="1580144643742">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="192" key="GridCell.Tab.0.right/0.0.1304.768@0.0.1304.768" timestamp="1580144643742" />
+    <state width="1261" height="238" key="GridCell.Tab.1.bottom" timestamp="1579925923212">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="238" key="GridCell.Tab.1.bottom/0.0.1304.768@0.0.1304.768" timestamp="1579925923212" />
+    <state width="1261" height="238" key="GridCell.Tab.1.center" timestamp="1579925923211">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="238" key="GridCell.Tab.1.center/0.0.1304.768@0.0.1304.768" timestamp="1579925923211" />
+    <state width="1261" height="238" key="GridCell.Tab.1.left" timestamp="1579925923211">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="238" key="GridCell.Tab.1.left/0.0.1304.768@0.0.1304.768" timestamp="1579925923211" />
+    <state width="1261" height="238" key="GridCell.Tab.1.right" timestamp="1579925923212">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state width="1261" height="238" key="GridCell.Tab.1.right/0.0.1304.768@0.0.1304.768" timestamp="1579925923212" />
+    <state x="246" y="56" key="Maven.ArtifactSearchDialog" timestamp="1579755430481">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="246" y="56" key="Maven.ArtifactSearchDialog/0.0.1304.768@0.0.1304.768" timestamp="1579755430481" />
     <state x="153" y="25" key="SettingsEditor" timestamp="1579108373977">
       <screen x="0" y="0" width="1304" height="768" />
     </state>
     <state x="153" y="25" key="SettingsEditor/0.0.1304.768@0.0.1304.768" timestamp="1579108373977" />
+    <state x="244" y="116" key="Vcs.Push.Dialog.v2" timestamp="1580144571298">
+      <screen x="0" y="0" width="1304" height="768" />
+    </state>
+    <state x="244" y="116" key="Vcs.Push.Dialog.v2/0.0.1304.768@0.0.1304.768" timestamp="1580144571298" />
     <state x="332" y="207" key="com.intellij.ide.util.TipDialog" timestamp="1579108418065">
       <screen x="0" y="0" width="1304" height="768" />
     </state>

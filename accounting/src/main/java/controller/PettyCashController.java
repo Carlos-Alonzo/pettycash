@@ -9,6 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import repositories.ExpenseRepository;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -26,10 +27,14 @@ public class PettyCashController
     public List<?> serveAllExpenses()     {return expenseRepository.findAll();    }
 
     @PostMapping(value ="/insert")
-    public ResponseEntity<?> processOneReceipt(@NonNull @RequestBody PettyCashVoucher receipt)
+    public ResponseEntity<Integer> processOneReceipt(@Valid @NonNull @RequestBody PettyCashVoucher receipt)
     {
+//        ResponseEntity<Integer> responseEntity = new ResponseEntity<>();
         pettyCash.addReceipt(receipt);
         return new ResponseEntity<>(HttpStatus.ACCEPTED);
     }
+
+//    @PostMapping(value="/replenish")
+//    public ResponseEntity
 
 }
