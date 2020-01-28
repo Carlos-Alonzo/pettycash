@@ -1,6 +1,6 @@
-package repositories;
+package ibh.accounting.pettycash.repositories;
 
-import model.PettyCashVoucher;
+import ibh.accounting.pettycash.model.PettyCashVoucher;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -13,7 +13,6 @@ public interface ExpenseRepository extends JpaRepository<PettyCashVoucher, Integ
     List<PettyCashVoucher> findAll();
     PettyCashVoucher findByTime(Timestamp timestamp);
     PettyCashVoucher findByAmount(Long amount);
-    PettyCashVoucher findByNumber(String number);
     PettyCashVoucher findByDescription(String description);
     PettyCashVoucher findByReceivedBy(String receivedBy);
     PettyCashVoucher findByAuthorizedBy(String authorizedBy);

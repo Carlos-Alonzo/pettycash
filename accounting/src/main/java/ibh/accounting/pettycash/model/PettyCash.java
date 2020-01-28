@@ -1,10 +1,9 @@
-package model;
+package ibh.accounting.pettycash.model;
 
 import lombok.Data;
 import lombok.NonNull;
-import repositories.ExpenseRepository;
+import org.springframework.context.annotation.Bean;
 
-import javax.persistence.Entity;
 import java.util.ArrayList;
 
 @Data

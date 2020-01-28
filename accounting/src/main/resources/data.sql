@@ -1,5 +1,5 @@
 
-create table expenses
+create table if not exists expenses
 (
     id int auto_increment primary key,
     time timestamp not null,
